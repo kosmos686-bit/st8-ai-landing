@@ -5,19 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ST8 AI — AI for Business in Dubai</title>
   <style>
-    body { font-family: 'Segoe UI', system-ui, sans-serif; margin:0; background: #0f172a; color: #e2e8f0; line-height: 1.6; }
-    header { background: linear-gradient(135deg, #1e40af, #3b82f6); padding: 5rem 1rem; text-align:center; }
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; margin:0; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; }
+    header { background: linear-gradient(135deg, #1e40af, #3b82f6, #60a5fa); padding: 5rem 1rem; text-align:center; position: relative; overflow: hidden; }
     .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-    h1 { font-size: 3.2rem; margin: 0; }
-    .tagline { font-size: 1.5rem; margin: 1rem 0 2rem; opacity: 0.95; }
+    h1 { font-size: 3.5rem; margin: 0 0 1rem; font-weight: 700; }
+    .tagline { font-size: 1.5rem; opacity: 0.95; margin-bottom: 2rem; }
     .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2rem; margin: 4rem 0; }
-    .card { background: #1e2937; border-radius: 16px; padding: 2.5rem; transition: all 0.3s; }
-    .card:hover { transform: translateY(-12px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.3); }
-    .btn { background: #3b82f6; color: white; padding: 16px 36px; border-radius: 10px; text-decoration: none; font-weight: 600; display: inline-block; margin: 10px 8px; }
-    .btn-outline { background: transparent; border: 2px solid #3b82f6; }
-    form { background: #1e2937; padding: 2.5rem; border-radius: 16px; max-width: 700px; margin: 3rem auto; }
-    input, textarea { width: 100%; padding: 14px; margin: 10px 0; background: #334155; border: none; border-radius: 8px; color: white; }
-    footer { text-align: center; padding: 3rem; background: #020617; }
+    .card { background: #1f2937; border-radius: 16px; padding: 2.5rem; transition: all 0.4s; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); }
+    .card:hover { transform: translateY(-12px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.4); }
+    .btn { background: #2563eb; color: white; padding: 16px 36px; border-radius: 12px; text-decoration: none; display: inline-block; font-weight: 600; font-size: 1.1rem; transition: all 0.3s; }
+    .btn:hover { background: #1d4ed8; transform: scale(1.05); }
+    .section { padding: 4rem 0; border-bottom: 1px solid #334155; }
+    footer { text-align: center; padding: 3rem; background: #020617; font-size: 0.95rem; }
+    .highlight { color: #60a5fa; }
+    form { max-width: 600px; margin: 2rem auto; }
+    input, textarea { width: 100%; padding: 14px; margin: 10px 0; background: #1f2937; border: 1px solid #475569; border-radius: 8px; color: #e0e0e0; }
+    button { background: #2563eb; color: white; border: none; padding: 16px 40px; border-radius: 12px; font-size: 1.1rem; cursor: pointer; }
   </style>
 </head>
 <body>
@@ -25,41 +29,46 @@
     <div class="container">
       <h1>ST8 AI</h1>
       <p class="tagline">Intelligent Automation for Restaurants, Cloud Kitchens & Construction in UAE</p>
-      <a href="index.html" class="btn btn-outline">Русская версия</a>
+      <a href="https://github.com/kosmos686-bit" class="btn" target="_blank" style="margin-right:15px;">GitHub</a>
+      <a href="#contact" class="btn">Request Demo</a>
     </div>
   </header>
 
-  <div class="container">
-    <h2 style="text-align:center;">Our Solutions</h2>
+  <div class="container section">
+    <h2 style="text-align:center; font-size:2.4rem; margin-bottom:3rem;">Solutions tailored for Dubai 2026 AI Trends</h2>
     <div class="cards">
       <div class="card">
-        <h3>CHEFF AI (st8-resto)</h3>
-        <p>Full kitchen automation: menu, orders, inventory, demand forecasting.</p>
+        <h3>CHEFF AI • st8-resto</h3>
+        <p>AI Chef & Kitchen Manager. Menu, orders, inventory and staff automation. Perfect for cloud kitchens and restaurants in UAE.</p>
       </div>
       <div class="card">
         <h3>Dark Intelligence</h3>
-        <p>Management of dark stores and cloud kitchens — operations & logistics optimization.</p>
+        <p>Full control over dark stores and cloud kitchens: demand forecasting, logistics optimization, up to 30% waste reduction.</p>
       </div>
       <div class="card">
-        <h3>MASTER AI (st8-stroy)</h3>
-        <p>AI assistant for construction companies: planning, control, risk management.</p>
+        <h3>MASTER AI • st8-stroy</h3>
+        <p>AI for Construction: project planning, quality control, predictive risk analytics — aligned with UAE 2026 trends.</p>
       </div>
     </div>
+  </div>
 
-    <h2 style="text-align:center; margin-top: 4rem;">Ready for Dubai</h2>
+  <div class="container" id="contact" style="text-align:center; padding:4rem 0;">
+    <h2>Ready for implementation in Dubai?</h2>
+    <p style="font-size:1.3rem; max-width:700px; margin:2rem auto;">We offer personalized demos tailored to your business. Powered by Grok AI + open-source tools.</p>
     
-    <form action="https://formspree.io/f/your-id" method="POST">
-      <h3>Request a Demo</h3>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Email" required>
-      <input type="text" name="company" placeholder="Company">
-      <textarea name="message" rows="5" placeholder="Tell us about your business (restaurant, cloud kitchen, construction...)"></textarea>
-      <button type="submit" class="btn" style="width:100%; padding:16px;">Send Demo Request</button>
+      <input type="text" name="company" placeholder="Company / Restaurant / Construction Firm">
+      <textarea name="message" rows="5" placeholder="Tell us about your business and what interests you (e.g. CHEFF AI for cloud kitchen)"></textarea>
+      <button type="submit">Send Demo Request</button>
     </form>
+    
+    <p style="margin-top:2rem;">Or email directly: <a href="mailto:your-email@domain.com" style="color:#60a5fa;">your-email@domain.com</a></p>
   </div>
 
   <footer>
-    <p>kosmos686-bit • ST8 Ecosystem 2026 • <a href="https://github.com/kosmos686-bit" style="color:#60a5fa;">GitHub</a></p>
+    <p>kosmos686-bit • ST8 Ecosystem • Dubai Ready 2026</p>
   </footer>
 </body>
 </html>
